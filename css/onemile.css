@@ -163,3 +163,15 @@ a, a:link{
 #aside ul li:hover{
     color:#000;
 }
+#footer{
+    text-align:center;
+}
+#logo_bot{
+    widows:122px;
+    height:25px;
+    margin:10px 0;
+}
+#footer h5{
+    font-size:11px;
+    margin:10px 0;
+}
