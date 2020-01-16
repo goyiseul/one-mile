@@ -36,7 +36,6 @@ a, a:link{
     width:1000px;
     height:100px;
     margin:0 auto;
-    position:relative;
 }
 .logo{
     width:156px;
@@ -74,17 +73,21 @@ a, a:link{
     opacity:100%;
 }
 /* =================visual======================= */
-.visual, .visu_slogan{
+#visual{
+    width:630px;
+    height:523px;
     position:absolute;
-}
-.visual{
-    top:280%;
     left:50%;
     transform:translateX(-50%);
+    top:260px;
+    font-size:0;
 }
-.visu_slogan{
-    top:400%;
-    left:10%;
+#visual img:nth-child(1){
+    margin-top:120px;
+}
+#visual img:nth-child(2){
+    position:absolute;
+    right:0;
 }
 /* ================special========-========= */
 #special{
@@ -119,40 +122,44 @@ a, a:link{
     display:block;
     clear:both;
 }
-/* =============aside================= */
+/* =============aside_wrap================= */
 #aside{
-    width:1000px;
-    margin:50px auto;
+    border-bottom:1px solid #ddd;
 }
-#aside:after{
+.aside_wrap{
+    width:1000px;
+    margin:0px auto;
+    padding-top:50px;
+}
+.aside_wrap:after{
     content:'';
     display:block;
     clear:both;
 }
-#aside img,#aside h2,#aside h3{
+.aside_wrap img,.aside_wrap h2,.aside_wrap h3{
     float:left;
 }
-#aside img{
+.aside_wrap img{
     width:19px;
     height:19px;
     padding:8px 5px 0 0;
 }
-#aside h2{
+.aside_wrap h2{
     font-size:20px;
     color:#000;
     font-weight:500;
     padding-right:5px;
     line-height:35px;
 }
-#aside h3{
+.aside_wrap h3{
     font-size:22px;
     color:#ff8e00;
     font-weight:700;
 }
-#aside ul{
+.aside_wrap ul{
     float:right;
 }
-#aside ul li{
+.aside_wrap ul li{
     display:inline-block;
     font-size:16px;
     font-weight:500;
@@ -160,16 +167,23 @@ a, a:link{
     padding:0 10px;
     transition:all 0.4s;
 }
-#aside ul li:hover{
+.aside_wrap ul li:hover{
     color:#000;
 }
+/* ==============footer=============== */
 #footer{
     text-align:center;
 }
 #logo_bot{
     widows:122px;
     height:25px;
-    margin:10px 0;
+    margin:50px 0 10px 0;
+}
+#footer p{
+    line-height:14px;
+}
+#footer p span{
+    padding:0 10px;
 }
 #footer h5{
     font-size:11px;
