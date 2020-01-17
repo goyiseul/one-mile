@@ -102,7 +102,7 @@ a, a:link{
     text-align:center;
     margin:150px 0 30px 0;
 }
-#special a h2:hover{
+#special h2 span{
     color:#ff8e00;
 }
 .items li{
@@ -112,10 +112,12 @@ a, a:link{
     border-radius:50%;
     overflow:hidden;
     margin-left:25px;
-    transition:all 0.5s;
 }
-.items li :hover{
-    zoom:1.1;
+.items li img{
+    transition:all 0.5s;  /*넓이, 높이 1.1배 */
+}
+.items li img:hover{
+    transform:scale(1.1);
 }
 .items:after{
     content:'';
@@ -175,7 +177,7 @@ a, a:link{
     text-align:center;
 }
 #logo_bot{
-    widows:122px;
+    width:122px;
     height:25px;
     margin:50px 0 10px 0;
 }
